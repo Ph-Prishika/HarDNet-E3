@@ -1,16 +1,49 @@
-# HarDNet-E3: Enhanced Shallow Feature Learning for Pediatric Renal Ultrasound Hydronephrosis Severity Classification
+# HarDNet-E2
+### Enhanced Shallow Feature Learning for Pediatric Renal Ultrasound Hydronephrosis Classification
 
-Official PyTorch implementation of **HarDNet-E3**, a modified HarDNet85 architecture for four-class pediatric hydronephrosis severity classification from renal ultrasound images.
+HarDNet-E2 is a modified HarDNet85 architecture designed for pediatric renal ultrasound image classification. The network enhances shallow feature propagation through structured shallow-to-deep skip connections, even-layer feature aggregation, squeeze-and-excitation (SE) feature recalibration, and residual feature fusion. These modifications improve the preservation of fine anatomical structures and boundary information in speckle-dominated ultrasound images.
 
-HarDNet-E3 enhances the original HarDNet85 through:
-
-- Structured shallow-to-deep skip connections
-- Squeeze-and-Excitation (SE) feature recalibration
-- Residual stabilization within each HarDBlock
-
-These architectural improvements preserve fine anatomical boundaries and texture information that are often degraded in speckle-dominated ultrasound images, leading to more robust hydronephrosis severity classification.
+This repository provides the official PyTorch implementation of HarDNet-E2, including training, evaluation, calibration, explainability, and visualization tools for reproducible medical image classification experiments.
 
 ---
+
+## Key Features
+
+- Enhanced shallow-to-deep feature reinforcement
+- Even-layer feature aggregation within HarDBlocks
+- Squeeze-and-Excitation (SE) feature recalibration
+- Residual feature fusion
+- Patient-level data splitting to prevent image leakage
+- Confidence calibration analysis (ECE)
+- Bootstrap statistical significance testing
+- Grad-CAM visualization
+- ROC and Precision–Recall curve generation
+- Frequency-domain feature analysis
+- Speckle-noise robustness evaluation
+
+---
+
+## Problem Setting
+
+Classification of pediatric renal ultrasound images into:
+
+- **Healthy**
+- **Mild Hydronephrosis**
+- **Moderate Hydronephrosis**
+- **Severe Hydronephrosis**
+
+**Input:** ROI-cropped renal ultrasound images (224 × 224)
+
+---
+
+## Architecture Overview
+
+HarDNet-E2 extends the original HarDNet85 by introducing:
+
+- Structured shallow-to-deep feature reinforcement
+- Even-layer feature aggregation within HarDBlocks
+- Squeeze-and-Excitation (SE) channel attention
+- Residual feature fusion for stable optimization
 
 ## Features
 
