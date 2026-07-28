@@ -73,7 +73,7 @@ HarDNet-E2 extends the original HarDNet85 by introducing:
 | CUDA | 12.7 |
 | Framework | PyTorch |
 | Input Size | 224 × 224 |
-| Batch Size | 32 |
+| Batch Size | 16 |
 
 ---
 
