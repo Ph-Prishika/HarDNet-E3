@@ -1,9 +1,9 @@
-# HarDNet-E2
+# HarDNet-E3
 ### Enhanced Shallow Feature Learning for Pediatric Renal Ultrasound Hydronephrosis Classification
 
-HarDNet-E2 is a modified HarDNet85 architecture designed for pediatric renal ultrasound image classification. The network enhances shallow feature propagation through structured shallow-to-deep skip connections, even-layer feature aggregation, squeeze-and-excitation (SE) feature recalibration, and residual feature fusion. These modifications improve the preservation of fine anatomical structures and boundary information in speckle-dominated ultrasound images.
+HarDNet-E3 is a modified HarDNet85 architecture designed for pediatric renal ultrasound image classification. The network enhances shallow feature propagation through structured shallow-to-deep skip connections, even-layer feature aggregation, squeeze-and-excitation (SE) feature recalibration, and residual feature fusion. These modifications improve the preservation of fine anatomical structures and boundary information in speckle-dominated ultrasound images.
 
-This repository provides the official PyTorch implementation of HarDNet-E2, including training, evaluation, calibration, explainability, and visualization tools for reproducible medical image classification experiments.
+This repository provides the official PyTorch implementation of HarDNet-E3, including training, evaluation, calibration, explainability, and visualization tools for reproducible medical image classification experiments.
 
 ---
 
